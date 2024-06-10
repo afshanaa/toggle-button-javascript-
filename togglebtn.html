@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Button javascript</title>
+    <style>
+body{
+         background-color: rgb(92, 100, 78);
+        }
+#togglebtn
+ {
+        background-color: rgb(158, 157, 157);
+        color: rgb(0, 7, 12);
+    border-radius: 10px;
+    padding: 10px 20px;
+    } 
+p{
+     font-size:2rem ;
+     font-style: italic;
+    }
+hr{
+        height: 3rem;
+        background-color: rgb(23, 35, 2);
+    }
+    </style>
+</head>
+<body>
+    <button id="togglebtn">toggle content</button> 
+    <hr>
+    <p id="content"style="display">
+        Our vast collection of animated cartoons spans various genres,
+         from classic favorites to the latest releases.<br>
+        Our team of passionate animators and creators work tirelessly<br> 
+        to produce high-quality content that<br> 
+        captivates and entertains.<br>
+         With a rich history of animated storytelling, Cartoon World has<br> 
+         become a beloved household name.<br>
+         In a vibrant and whimsical world, animated
+          characters come to life with vivid colors and exaggerated features.<br>
+          The sun shines brightly in the clear blue sky as a<br>
+           group of anthropomorphic<br>
+           animals gathers in a lush, enchanted forest.<br>
+           A mischievous squirrel scampers through the trees,
+            its fluffy tail trailing behind like a comet.<br>
+            A wise old owl perches on a moss-covered branch, observing<br> 
+           the lively scene below with a knowing gaze. Meanwhile, a cheerful <br>
+           bunny conducts a flower orchestra, <br>
+           with blossoms blooming in harmony to the sweet melody. Butterflies<br>
+            flutter around, adding a touch of magic to the air,<br>
+            while a giggling stream weaves its way through the scene.<br>
+    </p>
+
+
+
+<script>
+document.getElementById("togglebtn").addEventListener('click', function() {
+let content = document.getElementById("content");
+content.style.display = (content.style.display === 'none')?'block':'none'
+});
+</script>
+</body>
+</html>
